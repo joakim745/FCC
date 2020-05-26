@@ -1,0 +1,14 @@
+function palindrome(str) {
+ var trimmed = str.replace(/[\W\s\_]/gi, '').toLowerCase();
+  if (trimmed === trimmed.split("").reverse().join("")) {
+   return true;
+ } else {
+   return false;
+ }
+}
+
+console.log(palindrome("eye"))
+console.log(palindrome("My age is 0, 0 si ega ym."))
+console.log(palindrome("five|\_/|four"))
+console.log(palindrome("A man, a plan, a canal. Panama"))
+console.log(palindrome("1 eye for of 1 eye."))
